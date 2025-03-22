@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    dynamicIO: true, // Enable dynamic input/output operations for improved performance
+    authInterrupts: true, // Allow authentication processes to interrupt ongoing operations for security purposes
+  },
 };
 
 export default nextConfig;
